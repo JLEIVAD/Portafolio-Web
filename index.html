@@ -5,59 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Leiva</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-
-    <style>
-        .body {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background-color: #20232a;
-          color: white;
-          text-align: center;
-          font-family: monospace;
-          max-width: 512px;
-          min-height: 100vh;
-          margin: 0 auto;      
-          padding: 32px;
-          box-sizing: border-box;
-        }
-    
-        .link {
-          background-color: #61dafb;
-          color: black;
-          font-weight: 700;
-          padding: 8px 16px;
-          text-decoration: none;
-        }
-      </style>
-
+    <link rel="stylesheet" href="./css/index.css">
+  
 </head>
 <body class="body">
-  <header>
-    <nav>
-      <div>
+  <header class="header">
+    <nav class="nav">
+      <div class="container elements">
         <a href="#">
-          <img src="./img/logo-jorge-leiva.webp" alt="Logo Jorge Leiva" width="48px" height="48px">
+          <img src="./img/logo-jorge-leiva.webp" alt="Logo Jorge Leiva" width="48px" height="48px" class="nav__logo" />
         </a>
-        <ul>
+        <ul class="menu">
           <li>
-            <a href="#">Perfil</a> 
+            <a href="#" class="menu__link">Perfil</a> 
           </li>
           <li>
-            <a href="#">Experiencia</a> 
+            <a href="#" class="menu__link">Experiencia</a> 
           </li>
           <li>
-            <a href="#">Contacto</a> 
+            <a href="#" class="menu__link">Contacto</a> 
           </li>
         </ul>
       </div>
     </nav>
   </header>
-    <h1>Jorge Leiva</h1>
-    <img src="./img/jorge_leiva.webp" alt="Jorge Leiva" width="256px" height="256px" />
-  <h2>El mejor desarrollador web FullStack del Perú</h2>
-  <p>Desarrollador FullStack en diferentes lenguajes como React, Node, C# entre otros con interacción con BD como MSSQL, Oracle, MongoDB, etc.</p>
-  <a href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" class="link">Contactar</a>
+  <main>
+    <article class="section section--hero">
+      <div class="container">
+        <div class="card">
+          <div class="card__header">
+            <h1>Jorge Leiva</h1>
+          </div>
+          <div class="card__body">
+            <h2 class="card__subtitle">El mejor desarrollador web FullStack del Perú</h2>
+            <p class="card__text">Desarrollador FullStack en diferentes lenguajes como React, Node, C# entre otros con interacción con BD como MSSQL, Oracle, MongoDB, etc.</p>            
+          </div>
+          <div class="card__footer">
+            <div class="buttons">
+              <a href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" class="link">Contactar</a>
+              <a href="#" class="button">CV</a>
+              <a href="#" class="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
