@@ -1,3 +1,5 @@
+@import './modules/cards.css';
+
 .body{
     background-color: #20232a;
     color: white;
@@ -60,5 +62,4 @@ color: #61dafb;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
-
 }
