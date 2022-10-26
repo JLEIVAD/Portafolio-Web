@@ -6,15 +6,22 @@
     <title>Jorge Leiva</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css">
-  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body class="body">
   <header class="header">
     <nav class="nav">
-      <div class="container elements">
+      <div class="container elements elements--header-nav">
         <a href="#">
-          <img src="./img/logo-jorge-leiva.webp" alt="Logo Jorge Leiva" width="48px" height="48px" class="nav__logo" />
+          <img src="./assets/img/logo-jorge-leiva.webp" alt="Logo Jorge Leiva" width="48px" height="48px" class="nav__logo" />
         </a>
+        <button class="nav__icon nav__icon--menu" id="navIconMenu">
+          <i class="bi bi-list"></i>
+        </button>
         <ul class="menu">
           <li>
             <a href="#" class="menu__link">Perfil</a> 
@@ -31,7 +38,7 @@
   </header>
   <main>
     <article class="section section--hero">
-      <div class="container">
+      <div class="container elements elements--hero">
         <div class="card">
           <div class="card__header">
             <h1 class="card__title">Jorge Leiva</h1>
@@ -42,14 +49,34 @@
           </div>
           <div class="card__footer">
             <div class="buttons">
-              <a href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" class="link">Contactar</a>
-              <a href="#" class="button">CV</a>
-              <a href="#" class="button">GitHub</a>
+              <div href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" class="button button--primary">Contactar</div>
+              <a href="#" class="button button--primary">CV</a>
+              <button href="#" class="button button--primary">GitHub</button>
+              <div href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" class="button button--outline">Contactar</div>
+              <a href="#" class="button button--outline">CV</a>
+              <button href="#" class="button button--outline">GitHub</button>
+              <a href="https://www.linkedin.com/in/jorge-enrique-leiva-diaz-14105064/" target="_blank" rel="noopener noreferrer" class="button">Contactar</a>
+              <a href="https://jorge-enrique-leiva-diaz.netlify.app" target="_blank" rel="noopener noreferrer" class="button">CV</a>
+              <a href="https://github.com/JLEIVAD" target="_blank" rel="noopener noreferrer" class="button">GitHub</a>
             </div>
           </div>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/img/jorge_leiva.webp" alt="Jorge Leiva" width="256" height="256" class="hero-img__img">
+          <figure class="hero-img__decorators">
+            <img src="./assets/svg/logo-html-5.svg" alt="Logo HTML 5" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/logo-css-3.svg" alt="Logo CSS 3" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/logo-javascript.svg" alt="Logo Javascript" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/logo-react.svg" alt="Logo React" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/c-sharp-svgrepo-com.svg" alt="Logo C#" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/mysql-svgrepo-com.svg" alt="Logo MySQL" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/node-svgrepo-com.svg" alt="Logo Node.js" width="64" height="64" class="hero-img__decorator">
+            <img src="./assets/svg/git-svgrepo-com.svg" alt="Logo Git" width="64" height="64" class="hero-img__decorator">
+          </figure>
         </div>
       </div>
     </article>
   </main>
 </body>
+<script src="./js/index.js" ></script>
 </html>

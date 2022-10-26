@@ -1,65 +1,17 @@
+@import './modules/variables.css';
+@import './modules/header.css';
+@import './modules/layout.css';
+@import './modules/menu.css';
+@import './modules/nav.css';
 @import './modules/cards.css';
+@import './modules/button.css';
+@import './modules/hero.css';
+@import './modules/animations.css';
 
 .body{
-    background-color: #20232a;
-    color: white;
-    font-family: monospace;
+    background-color: var(--primary-them-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-familiy);
     margin: 0;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.nav{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.container{
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.elements{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav__logo{
-    display: block;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-}
-.menu{
-    display: flex;
-    gap: 16px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.menu__link{
-    color: white;   
-    font-weight: 700;
-    text-decoration: none;
-    transition: color  0.25s;
-}
-.menu__link:hover{
-color: #61dafb;
-}
-.section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.section--hero{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-}
+
