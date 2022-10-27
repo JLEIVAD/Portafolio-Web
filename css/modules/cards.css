@@ -1,4 +1,5 @@
 .card {
+    z-index: 5;
     box-shadow: 0 0 0.125rem 0.125rem var(--primary-shadow-color);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -37,9 +38,9 @@
     display: none;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .card {
-        max-width: 512px;
+        max-width: 512px ;
     }
 
     .card__title {

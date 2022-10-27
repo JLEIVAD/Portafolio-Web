@@ -7,11 +7,15 @@
 @import './modules/button.css';
 @import './modules/hero.css';
 @import './modules/animations.css';
+@import './modules/swiper.css';
 
 .body{
-    background-color: var(--primary-them-color);
+    background-color: var(--primary-theme-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font-familiy);
     margin: 0;
 }
 
+.main {
+    overflow: hidden;
+}

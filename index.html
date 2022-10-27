@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body class="body">
-  <header class="header">
+  <header class="header animate__animated animate__fadeIn">
     <nav class="nav">
       <div class="container elements elements--header-nav">
         <a href="#">
@@ -22,24 +24,27 @@
         <button class="nav__icon nav__icon--menu" id="navIconMenu">
           <i class="bi bi-list"></i>
         </button>
-        <ul class="menu">
+        <ul class="menu menu--header">
           <li>
-            <a href="#" class="menu__link">Perfil</a> 
+            <a href="#hero" class="menu__link">Perfil</a> 
           </li>
           <li>
-            <a href="#" class="menu__link">Experiencia</a> 
+            <a href="#projects" class="menu__link">Experiencia</a> 
           </li>
           <li>
             <a href="#" class="menu__link">Contacto</a> 
+          </li>
+          <li class="nav__icon nav__icon--close" id="navIconClose">
+            <i class="bi bi-x-circle"></i>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main>
-    <article class="section section--hero">
+  <main class="main">
+    <article class="section section--hero" id="hero">
       <div class="container elements elements--hero">
-        <div class="card">
+        <div class="card animate__animated animate__fadeInLeft">
           <div class="card__header">
             <h1 class="card__title">Jorge Leiva</h1>
           </div>
@@ -61,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-img">
+        <div class="hero-img animate__animated animate__fadeInRight">
           <img src="./assets/img/jorge_leiva.webp" alt="Jorge Leiva" width="256" height="256" class="hero-img__img">
           <figure class="hero-img__decorators">
             <img src="./assets/svg/logo-html-5.svg" alt="Logo HTML 5" width="64" height="64" class="hero-img__decorator">
@@ -76,7 +81,33 @@
         </div>
       </div>
     </article>
+
+    <section class="section section--projects" id="projects">
+      <div class="container elements">    
+        <h2 class="section__title">Proyectos</h2>
+        <div class="swiper"> 
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://i.postimg.cc/LXPKVpKW/cineverse.png" alt="cineverse" width="100%" height="100%" class=".swiper__img">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.postimg.cc/QtKFX069/pokemon'inc'mern'frontend.png" alt="pokemon" width="100%" height="100%" class=".swiper__img">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.postimg.cc/Cx03d381/puedes-lograrlo-ea-r.png" alt="puedes lograrlo" width="100%" height="100%" class=".swiper__img">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.postimg.cc/wxrNmB07/tarjeta-de-perfil-elgs.png" alt="tarjeta-de-perfil" width="100%" height="100%" class=".swiper__img">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
-<script src="./js/index.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+</script><script src="./js/index.js" type="module"></script>
 </html>

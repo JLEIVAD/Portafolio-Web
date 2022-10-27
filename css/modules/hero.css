@@ -74,7 +74,7 @@
     transform: translate(-100%, -100%) rotate(-45deg);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .hero-img__img {   
         width: 320px;
         height: 320px;

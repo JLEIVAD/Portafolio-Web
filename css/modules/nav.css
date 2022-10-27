@@ -1,7 +1,13 @@
 .nav{
     --traslate-x-menu: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    --padding-nav: 1rem;
+    padding-top: var(--padding-nav);
+    padding-bottom: var(--padding-nav);
+    transition: padding 0.25s;
+}
+
+.nav--scroll {
+    --padding-nav: 0.5rem;
 }
 
 .nav--open {
@@ -30,4 +36,21 @@
 
 .nav__icon:hover {
     filter: contrast(1);
+}
+
+.nav__icon--close {
+    position: absolute;
+    top: calc(1rem + var(--padding-nav));
+    right: 1rem;
+    transition: top 0.25s;
+}
+
+@media (min-width: 768px) {
+    .nav{
+        --traslate-x-menu: 0;
+    }
+
+    .nav__icon--menu, .nav__icon--close {
+        display: none;
+    }
 }
